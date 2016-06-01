@@ -2,7 +2,7 @@
 Useful financial statement analysis, audit, and tax tools for accounting professionals, designed by a CPA.
 
 # Terms and Conditions
-(This is so-called MIT/X License)
+The MIT License (MIT)
 
 Copyright (c) 2016 Daniel Shorstein
 
