@@ -17,7 +17,7 @@ setup(
     install_requires=['pandas'],
     entry_points=dict(
         console_scripts=[
-            'bottomline = bottomline:main',
+            'bottomline = bottomline.bottomline:main',
         ],
     ),
 )
