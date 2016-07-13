@@ -7,7 +7,6 @@ readme = os.path.join(os.path.dirname(__file__), 'README.md')
 setup(
     name='bottomline',
     description='an accountants toolbox',
-    long_description=read_md(readme) if os.path.exists(readme) else '',
     version='0.0',
     packages=['bottomline'],
     license='The MIT License',
