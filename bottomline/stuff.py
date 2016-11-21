@@ -1,2 +1,0 @@
-# Testing
-print 'heck yeah!'
