@@ -5,14 +5,14 @@ from setuptools import setup
 
 readme = os.path.join(os.path.dirname(__file__), 'README.md')
 setup(
-    name='bottomline',
+    name='cpatoolz',
     description='an accountants toolbox',
     version='0.0',
-    packages=['bottomline'],
+    packages=['cpatoolz'],
     license='The MIT License',
     author='Daniel Shorstein',
     author_email='dshorstein@gmail.com',
-    url='https://github.com/dtiz/bottomline',
+    url='https://github.com/danshorstein/cpatoolz',
     install_requires=['pandas'],
     entry_points=dict(
         console_scripts=[
