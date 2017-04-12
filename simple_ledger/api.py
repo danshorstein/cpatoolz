@@ -32,3 +32,7 @@ class GeneralLedgerService:
 
     def filter_detail(self, acct_number=None, beginning_date=None, ending_date=None):
         pass
+
+    def chart_of_accts(self):
+        coa = self.gl[self.acct].unique()  # TODO - ADD ACCT NUMBER AND ACCT DESCRIPTION
+        return coa
