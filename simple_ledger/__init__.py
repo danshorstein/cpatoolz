@@ -1,4 +1,4 @@
-from simple_ledger.api import GeneralLedgerService
+from simple_ledger.general_ledger import GeneralLedger
 from datetime import datetime
 
 
@@ -7,9 +7,9 @@ def main():
     end_date = datetime(2018, 5, 15)
     accts = [1000, 1010, 1200, 2000, 2110, 4000, 5010]
 
-    gl = GeneralLedgerService()
+    gl = GeneralLedger()
 
-    gl.load_detail()
+    gl.load_source_detail()
 
     gl.validate()
 
@@ -26,7 +26,7 @@ def main():
     print(gl.sum_by_gl_account(accounts=accts, beginning_date=beg_date, ending_date=end_date))
 
     print('')
-    print('Summaried FS grouping for range {} to {}'.format(beg_date.date(), end_date.date()))
+    print('Summarized FS grouping for range {} to {}'.format(beg_date.date(), end_date.date()))
     print(gl.sum_by_fs_grouping(beginning_date=beg_date, ending_date=end_date))
 
     print('')
