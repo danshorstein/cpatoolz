@@ -96,3 +96,7 @@ class GeneralLedger:
         self.df.to_csv(self.csv_source_path, index=False)
         print('Saved file at {}'.format(self.csv_source_path))
 
+    @staticmethod
+    def htmlify(df_view):
+        df_view = df_view.to_frame() if isinstance(df_view, pd.Series) else df_view
+        return df_view.to_html()
