@@ -1,5 +1,3 @@
-# I've never done this before - testing it out!!!
-
 import os
 from setuptools import setup
 
@@ -16,7 +14,7 @@ setup(
     install_requires=['pandas'],
     entry_points=dict(
         console_scripts=[
-            'bottomline = bottomline.bottomline:main',
+            'cpatoolz = cpztoolz.cpztoolz:main',
         ],
     ),
 )
